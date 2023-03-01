@@ -8,7 +8,7 @@
 		"editor.background": "#ECFAEE",
 		"editorCursor.foreground": "#253d24",
 		"editor.lineHighlightBackground": "#d1ded3",
-		"editor.selectionBackground": "#dcebd1",
+		"editor.selectionBackground": "#97b8a7",
 		"editorBracketHighlight.foreground1": "#ff0033",
 		"editorBracketHighlight.foreground2": "#0033ff",
 		"editorBracketHighlight.foreground3": "#ed3333",
@@ -186,7 +186,7 @@
 			"scope": "comment",
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#b8b8b8"
+				"foreground": "#989898"
 			}
 		},
 		{
@@ -266,14 +266,14 @@
 			"scope": "keyword",
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#A9312F"
+				"foreground": "#762625"
 			}
 		},
 		{
 			"name": "Keyword Control",
 			"scope": "keyword.control",
 			"settings": {
-				"foreground": "#d0104c",
+				"foreground": "#A9312F",
 				"fontStyle": "bold"
 			}
 		},
@@ -469,14 +469,14 @@
 			"name": "Support.function",
 			"scope": "support.function",
 			"settings": {
-				"foreground": "#ca004bff"
+				"foreground": "#50001d"
 			}
 		},
 		{
 			"name": "Support.constant",
 			"scope": "support.constant",
 			"settings": {
-				"foreground": "#c44f00ff"
+				"foreground": "#702d00"
 			}
 		},
 		{
