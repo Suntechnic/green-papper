@@ -1,9 +1,17 @@
 # Change Log
 
-All notable changes to the "green-papper" extension will be documented in this file.
+## [0.2.1] - 2023-03-18
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- Добавление истории версий / Adding change log
 
-## [Unreleased]
+## [0.2.0] - 2023-03-18
 
-- Initial release
+- Добавление белой версии / Adding white version
+
+## [0.1.1] - 2023-03-17
+
+- Мелкие исправления / Fix bugs
+
+## [0.1.0] - 2023-03-12
+
+- Первый релиз / Initial release
