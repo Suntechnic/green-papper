@@ -1,10 +1,10 @@
 {
   "name": "green-papper",
-  "displayName": "Green papper",
+  "displayName": "Green paper",
   "publisher": "Suntechnic",
   "icon": "images/logo.png",
   "description": "",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -18,9 +18,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Green papper",
+        "label": "Green paper",
         "uiTheme": "vs",
         "path": "./themes/main.json"
+      },
+      {
+        "label": "Green paper white",
+        "uiTheme": "vs",
+        "path": "./themes/white.json"
       }
     ]
   }
