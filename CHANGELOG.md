@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.3.0] - 2023-04-10
+
+- Добавление bitrix версии / Adding bitrix version
+
 ## [0.2.1] - 2023-03-18
 
 - Добавление истории версий / Adding change log

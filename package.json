@@ -4,7 +4,7 @@
   "publisher": "Suntechnic",
   "icon": "images/logo.png",
   "description": "",
-  "version": "0.2.1",
+  "version": "0.2.3",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -26,6 +26,11 @@
         "label": "Green paper white",
         "uiTheme": "vs",
         "path": "./themes/white.json"
+      },
+      {
+        "label": "Green paper bitrix",
+        "uiTheme": "vs",
+        "path": "./themes/bitrix.json"
       }
     ]
   }
