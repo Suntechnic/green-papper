@@ -4,7 +4,7 @@
   "publisher": "Suntechnic",
   "icon": "images/logo.png",
   "description": "",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -21,6 +21,16 @@
         "label": "Green paper",
         "uiTheme": "vs",
         "path": "./themes/main.json"
+      },
+      {
+        "label": "Green Chrome",
+        "uiTheme": "vs",
+        "path": "./themes/chrome-green.json"
+      },
+      {
+        "label": "Vert Guignet Chrome",
+        "uiTheme": "vs",
+        "path": "./themes/chrome-vertguignet.json"
       },
       {
         "label": "Green paper white",

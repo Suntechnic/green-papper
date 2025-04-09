@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.4.0] - 2025-04-09
+
+- Добавление версий «Vert Guignet Chrome» и «Green Chrome» / Adding the «Vert Guignet Chrome» and «Green Chrome» versions.
+
 ## [0.3.0] - 2023-04-10
 
 - Добавление bitrix версии / Adding bitrix version
