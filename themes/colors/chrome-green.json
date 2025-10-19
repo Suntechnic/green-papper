@@ -1,7 +1,5 @@
 {
-	"name": "Green Papper",
-    "include": "./token-colors/main.json",
-    "colors": {
+	"colors": {
 		"focusBorder":"#48b2b6",
 		"widget.shadow":"#207f4c25",
 		"sash.hoverBorder":"#3BA776",

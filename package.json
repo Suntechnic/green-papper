@@ -4,7 +4,7 @@
   "publisher": "Suntechnic",
   "icon": "images/logo.png",
   "description": "",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -26,6 +26,11 @@
         "label": "Green Chrome",
         "uiTheme": "vs",
         "path": "./themes/chrome-green.json"
+      },
+      {
+        "label": "Green Chrome: base",
+        "uiTheme": "vs",
+        "path": "./themes/chrome-green-base.json"
       },
       {
         "label": "Vert Guignet Chrome",
