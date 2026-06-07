@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.4.1] - 2025-10-19
+
+- Базовая цветовая схема и улучшение подсветки комментариев / Base color scheme and improved comment highlighting
+
 ## [0.4.0] - 2025-04-09
 
 - Добавление версий «Vert Guignet Chrome» и «Green Chrome» / Adding the «Vert Guignet Chrome» and «Green Chrome» versions.
