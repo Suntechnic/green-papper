@@ -1,313 +1,280 @@
-/*
- * Green Papper Theme for Obsidian
- * Converted from VS Code "Green Papper" theme
-
- */
-
-:root {
-  /* === BASE COLORS === */
+.theme-light,
+:root[saved-theme="GreenPapper"] {
   color-scheme: light;
-  --background-primary: #FCFFFE;
-  --background-secondary: #EEF2F4;
-  --background-secondary-alt: #E0E5E9;
-  --background-tertiary: #D7DFE3;
-  --background-modifier-border: #535C69;
-  --background-modifier-form-field: #FDFFFE;
-  --background-modifier-form-field-focused: #FDFFFE;
-  --background-modifier-box-shadow: rgba(32, 127, 76, 0.15);
-  --background-modifier-success: rgba(67, 178, 68, 0.15);
-  --background-modifier-error: rgba(245, 24, 24, 0.15);
+
+    --background-primary: #F6F8F4;
+    --background-primary-alt: #EEF2ED;
+    --background-secondary: #E2E8E1;
+    --background-secondary-alt: #D7DED7;
+    --background-tertiary: #CDD5CD;
+
+  --background-modifier-border: #657b69;
+  --background-modifier-border-hover: #3BA776;
+  --background-modifier-form-field: #ECFAEE;
+  --background-modifier-form-field-highlighted: #E0F8ED;
+  --background-modifier-box-shadow: #207f4c25;
+  --background-modifier-hover: #E0F4EE44;
+  --background-modifier-active-hover: #E0F4EE66;
+
+  --text-normal: #222222;
+  --text-muted: #595959;
+  --text-faint: #555555;
+  --text-on-accent: #ffffff;
+  --text-selection: #97b8a7;
+  --text-highlight-bg: #ff003366;
+
+  --interactive-normal: #98a099;
+  --interactive-hover: #3BA776;
+  --interactive-accent: #98a099;
+  --interactive-accent-hover: #3BA776;
+  --color-accent: #48b2b6;
+  --color-accent-1: #48b2b6;
+  --color-accent-2: #3BA776;
+
+  --tab-text-color: #595959;
+  --tab-text-color-active: #222222;
+  --tab-background-active: #ECFAEE;
+  --tab-background-inactive: #c6d2c7;
+
+  --titlebar-text-color: #555555;
+  --titlebar-text-color-focused: #222222;
+  --link-color: #48b2b6;
+  --link-color-hover: #3BA776;
+
+  --background-modifier-success: #43b24422;
+  --background-modifier-error: #f5181822;
   --background-modifier-error-rgb: 245, 24, 24;
-  --background-modifier-error-hover: rgba(245, 24, 24, 0.25);
-  --background-modifier-warning: rgba(242, 174, 73, 0.15);
+  --background-modifier-warning: #f2ae4922;
   --background-modifier-warning-rgb: 242, 174, 73;
 
-  /* === TEXT COLORS === */
-  --text-normal: #222222;
-  --text-muted: #595959;
-  --text-faint: #999999;
-  --text-on-accent: #ffffff;
-  --text-error: #f51818;
-  --text-error-hover: #f07171;
-  --text-highlight-bg: rgba(255, 0, 51, 0.2);
-  --text-selection: #ffffff;
+  --code-normal: #222222;
+  --code-background: #cdd9cf;
+  --code-comment: #6c7680;
+  --code-function: #207f4c;
+  --code-keyword: #f51818;
+  --code-string: #cc33cc;
+  --code-variable: #006600;
+  --code-operator: #48b2b6;
+  --code-property: #253d24;
+  --code-value: #a37acc;
+  --code-tag: #3BA776;
+  --code-punctuation: #383838;
+  --code-class-name: #cc33cc;
 
-  /* === ACCENT COLORS === */
-  --color-accent: #3BC8F5;
-  --color-accent-rgb: 59, 200, 245;
-  --color-accent-1: #48b2b6;
-  --color-accent-2: #2FC7F7;
-  --color-accent-3: #3EDDFF;
+  --h1-color: #253d24;
+  --h2-color: #207f4c;
+  --h3-color: #3BA776;
+  --h4-color: #48b2b6;
+  --h5-color: #595959;
+  --h6-color: #555555;
 
-  /* === SEMANTIC COLORS === */
-  --color-red: #f51818;
-  --color-red-rgb: 245, 24, 24;
-  --color-green: #43b244;
-  --color-green-rgb: 67, 178, 68;
-  --color-orange: #f2ae49;
-  --color-orange-rgb: 242, 174, 73;
-  --color-yellow: #f2ae49;
-  --color-yellow-rgb: 242, 174, 73;
-  --color-cyan: #39cbcc;
-  --color-blue: #2598da;
-  --color-blue-rgb: 37, 152, 218;
-  --color-purple: #a37acc;
-  --color-purple-rgb: 163, 122, 204;
-  --color-pink: #fe76ff;
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: #aaaaaa99;
+  --scrollbar-active-thumb-bg: #98a099;
 
-  /* === UI ELEMENTS === */
-  --color-primary-alt: #207f4c;
-  --color-primary-alt-rgb: 32, 127, 76;
-
-  /* === INTERACTIVE COLORS === */
-  --interactive-normal: #3BC8F5;
-  --interactive-hover: #3EDDFF;
-  --interactive-accent: #48b2b6;
-  --interactive-accent-rgb: 72, 178, 182;
-  --interactive-accent-hover: #2FC7F7;
-
-  /* === BORDERS === */
-  --border-color: #E0E5E9;
-
-  /* === SCROLLBAR === */
-  --scrollbar-background-hover: rgba(170, 170, 170, 0.6);
-  --scrollbar-thumb-background-active: rgba(170, 170, 170, 0.8);
-  --scrollbar-thumb-background-hover: rgba(170, 170, 170, 0.7);
-
-  /* === SYNTAX HIGHLIGHTING === */
   --syntax-text-normal: #3e4b53;
-  --syntax-keyword: #762625;
-  --syntax-keyword-control: #A9312F;
-  --syntax-storage: #8f200f;
-  --syntax-string: #e10000;
-  --syntax-number: #9f1bf1;
+  --syntax-comment: #989898;
   --syntax-constant: #160c2a;
-  --syntax-entity: #cc3611;
-  --syntax-entity-tag: #2265ad;
-  --syntax-entity-attribute: #cb2d01;
-  --syntax-support: #3c7a03;
-  --syntax-support-function: #50001d;
-  --syntax-support-class: #b18534;
+  --syntax-number: #9f1bf1;
+  --syntax-string: #e10000;
+  --syntax-regexp: #cf5628;
   --syntax-variable: #006600;
   --syntax-variable-parameter: #ca7300;
+  --syntax-keyword: #762625;
   --syntax-operator: #0f95b0;
-  --syntax-operator-comparison: #2598da;
-  --syntax-operator-logical: #ca004b;
-  --syntax-comment: #989898;
-  --syntax-comment-doc: #484848;
-  --syntax-invalid: #333333;
-  --syntax-embedded-source: #080808;
-  --syntax-entity-class: #4090f3;
-  --syntax-entity-type: #b18534;
-
-  /* === HTML/CSS SPECIFIC === */
   --syntax-html-tag: #881280;
   --syntax-html-attribute: #994500;
-  --syntax-html-string: #1A1AA8;
-  --syntax-css-color: #cf8f3b;
+  --syntax-entity-type: #b18534;
+  --syntax-entity-class: #4090f3;
 }
 
-
-/* === CUSTOM ELEMENT STYLING === */
-body,
-.cm-s-obsidian {
-  background-color: var(--background-primary);
-  color: var(--text-normal);
+body.theme-light {
+  color-scheme: light;
 }
 
-.cm-header {
-  color: var(--syntax-entity-tag);
-  font-weight: bold;
-}
-
-.cm-strong {
-  color: var(--text-normal);
-  font-weight: bold;
-}
-
-.cm-em {
-  color: var(--text-normal);
-  font-style: italic;
-}
-
-.cm-link {
-  color: var(--color-blue);
-}
-
-.cm-string {
-  color: var(--syntax-string);
-}
-
-.cm-number {
-  color: var(--syntax-number);
-}
-
-.cm-atom {
-  color: var(--syntax-constant);
-}
-
-.cm-keyword {
-  color: var(--syntax-keyword);
-  font-weight: bold;
-}
-
-.cm-variable {
-  color: var(--syntax-variable);
-  font-weight: bold;
-}
-
-.cm-variable-2 {
-  color: var(--syntax-variable-parameter);
-}
-
-.cm-property {
-  color: #934b3cff;
-}
-
-.cm-comment {
-  color: var(--syntax-comment);
-  font-style: italic;
-}
-
-.cm-tag {
-  color: var(--syntax-html-tag);
-}
-
-.cm-attribute {
-  color: var(--syntax-html-attribute);
-}
-
-.cm-operator {
-  color: var(--syntax-operator);
-}
-
-.token.deleted {
-  color: var(--color-red);
-}
-
-.token.inserted {
-  color: var(--color-green);
-}
-
-/* === EDITOR ENHANCEMENTS === */
-.cm-line {
-  line-height: 1.6;
-}
-
-.cm-cursor {
-  border-left-color: #253d24;
-}
-
-.cm-selection,
-.cm-selectionBackground {
-  background-color: #97b8a7;
-}
-
-.CodeMirror-selected {
-  background-color: #97b8a7;
-}
-
-.CodeMirror-line::selection,
-.CodeMirror-line > span::selection,
-.CodeMirror-line > span > span::selection {
-  background-color: #97b8a7;
-}
-
-/* === FOCUS BORDER === */
-:focus {
-  outline-color: #48b2b6;
-}
-
-input:focus,
-button:focus,
-textarea:focus {
-  outline-color: #48b2b6;
-}
-
-/* === ADDITIONAL VISUAL ENHANCEMENTS === */
-.markdown-preview-view {
-  --text-normal: #222222;
-  --text-muted: #595959;
-}
-
-.markdown-preview-view h1,
-.markdown-preview-view h2,
-.markdown-preview-view h3 {
-  color: var(--syntax-entity-tag);
+.markdown-preview-view ul > li::marker,
+.markdown-preview-view ol > li::marker {
+  color: #7d451c;
 }
 
 .markdown-preview-view code {
-  color: var(--syntax-string);
-  background-color: #F0F3F5;
-  padding: 2px 4px;
-  border-radius: 3px;
-}
-
-.markdown-preview-view pre {
-  background-color: #EEF2F4;
-  border: 1px solid #D7DFE3;
-}
-
-
-/* Основной фон и текст */
-body.theme-light,
-body.theme-dark {
-  background-color: var(--background-primary);
-  color: var(--text-normal);
+  color: var(--code-string);
+  background-color: var(--code-background);
 }
 
 .workspace,
-.workspace-split,
-.workspace-leaf {
-  background-color: var(--background-primary);
+.workspace-leaf,
+.markdown-source-view.mod-cm6,
+.markdown-preview-view {
+  background: var(--background-primary);
 }
 
 .workspace-ribbon,
-.workspace-tab-header,
-.workspace-leaf-resize-handle {
-  background-color: var(--background-secondary);
-  border-color: var(--border-color);
+.mod-left-split,
+.mod-right-split,
+.side-dock-settings {
+  background: var(--background-secondary);
 }
 
-/* Сайдбар (файлы, папки) */
+.nav-file-title,
 .nav-folder-title,
-.nav-file-title {
+.workspace-tab-header-inner-title {
   color: var(--text-normal);
 }
 
-.nav-file-title.is-active,
-.nav-folder-title.is-active {
-  background-color: var(--interactive-accent);
-  color: var(--text-on-accent);
+.workspace-tab-header.is-active {
+  background: var(--tab-background-active);
 }
 
-/* Редактор + предпросмотр */
-.markdown-source-view.mod-cm6,
-.markdown-preview-view {
-  background-color: var(--background-primary);
-  color: var(--text-normal);
+.workspace-tab-header:not(.is-active) {
+  background: var(--tab-background-inactive);
 }
 
-.markdown-preview-view a,
-.cm-s-obsidian .cm-link {
-  color: var(--color-accent);
+.status-bar {
+  background: var(--background-secondary);
+  color: var(--text-muted);
 }
 
-.cm-s-obsidian .cm-comment {
+.cm-selectionBackground,
+::selection {
+  background: var(--text-selection);
+}
+
+
+/* Базовый текст редактора */
+.cm-s-obsidian,
+.cm-editor {
+  color: var(--syntax-text-normal);
+}
+
+/* Комментарии */
+.cm-s-obsidian .cm-comment,
+.cm-editor .cm-comment {
   color: var(--syntax-comment);
   font-style: italic;
 }
 
-.cm-s-obsidian .cm-string,
-.markdown-preview-view code {
-  color: var(--syntax-string);
-}
-
-.cm-s-obsidian .cm-number {
+/* Числа / константы */
+.cm-s-obsidian .cm-number,
+.cm-editor .cm-number {
   color: var(--syntax-number);
 }
+.cm-s-obsidian .cm-atom,
+.cm-editor .cm-atom {
+  color: var(--syntax-constant);
+}
 
-.cm-s-obsidian .cm-keyword {
+/* Строки / regexp */
+.cm-s-obsidian .cm-string,
+.cm-editor .cm-string {
+  color: var(--syntax-string);
+}
+.cm-s-obsidian .cm-string.cm-special,
+.cm-editor .cm-string.cm-special {
+  color: var(--syntax-regexp);
+}
+
+/* Переменные и параметры */
+.cm-s-obsidian .cm-variable,
+.cm-editor .cm-variable {
+  color: var(--syntax-variable);
+  font-weight: 600;
+}
+.cm-s-obsidian .cm-variable-2,
+.cm-editor .cm-variable-2 {
+  color: var(--syntax-variable-parameter);
+}
+
+/* Ключевые слова */
+.cm-s-obsidian .cm-keyword,
+.cm-editor .cm-keyword {
   color: var(--syntax-keyword);
-  font-weight: bold;
+  font-weight: 600;
+}
+
+/* Операторы */
+.cm-s-obsidian .cm-operator,
+.cm-editor .cm-operator {
+  color: var(--syntax-operator);
+}
+
+/* Теги / атрибуты (HTML JSX) */
+.cm-s-obsidian .cm-tag,
+.cm-editor .cm-tag {
+  color: var(--syntax-html-tag);
+}
+.cm-s-obsidian .cm-attribute,
+.cm-editor .cm-attribute {
+  color: var(--syntax-html-attribute);
+}
+
+/* Имена классов/типов/функций (примерное соответствие) */
+.cm-s-obsidian .cm-typeName,
+.cm-editor .cm-typeName {
+  color: var(--syntax-entity-type);
+}
+.cm-s-obsidian .cm-property,
+.cm-editor .cm-property {
+  color: #934b3c; /* из tokenColors property */
+}
+.cm-s-obsidian .cm-def,
+.cm-editor .cm-def {
+  color: var(--syntax-entity-class);
+}
+
+/* Подсветка выделения и поиска */
+.cm-selectionBackground,
+.cm-content ::selection {
+  background-color: var(--text-selection);
+}
+
+/* Markdown-структура (заголовки и цитаты) */
+.markdown-source-view.mod-cm6 .cm-header,
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3 {
+  color: var(--syntax-html-tag);
+}
+
+.markdown-source-view.mod-cm6 .cm-quote,
+.markdown-preview-view blockquote {
+  color: #0b6125;
+  border-left: 3px solid #0b6125;
+  padding-left: 0.8em;
+}
+
+/* Ссылки в markdown */
+.markdown-preview-view a,
+.cm-s-obsidian .cm-link {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+/* Списки */
+.markdown-preview-view li {
+  color: #7d451c;
+}
+
+/* Сильное / курсив */
+.markdown-preview-view strong {
+  color: #080808;
+  font-weight: 700;
+}
+.markdown-preview-view em {
+  color: #080808;
+  font-style: italic;
+}
+
+/* Сырые блоки и code */
+.markdown-preview-view code {
+  color: #234a97;
+}
+
+/* Удалённое / добавленное (diff) */
+.markdown-preview-view .cm-strikethrough,
+.markdown-preview-view del {
+  color: #47565f;
+}
+.markdown-preview-view ins {
+  color: #cc0000;
 }
