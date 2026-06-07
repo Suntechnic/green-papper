@@ -1,6 +1,7 @@
 /*
  * Green Papper Theme for Obsidian
  * Converted from VS Code "Green Papper" theme
+
  */
 
 :root {
@@ -105,6 +106,7 @@
   --syntax-html-string: #1A1AA8;
   --syntax-css-color: #cf8f3b;
 }
+
 
 /* === CUSTOM ELEMENT STYLING === */
 body,
@@ -244,4 +246,68 @@ textarea:focus {
 .markdown-preview-view pre {
   background-color: #EEF2F4;
   border: 1px solid #D7DFE3;
+}
+
+
+/* Основной фон и текст */
+body.theme-light,
+body.theme-dark {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+}
+
+.workspace,
+.workspace-split,
+.workspace-leaf {
+  background-color: var(--background-primary);
+}
+
+.workspace-ribbon,
+.workspace-tab-header,
+.workspace-leaf-resize-handle {
+  background-color: var(--background-secondary);
+  border-color: var(--border-color);
+}
+
+/* Сайдбар (файлы, папки) */
+.nav-folder-title,
+.nav-file-title {
+  color: var(--text-normal);
+}
+
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+/* Редактор + предпросмотр */
+.markdown-source-view.mod-cm6,
+.markdown-preview-view {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+}
+
+.markdown-preview-view a,
+.cm-s-obsidian .cm-link {
+  color: var(--color-accent);
+}
+
+.cm-s-obsidian .cm-comment {
+  color: var(--syntax-comment);
+  font-style: italic;
+}
+
+.cm-s-obsidian .cm-string,
+.markdown-preview-view code {
+  color: var(--syntax-string);
+}
+
+.cm-s-obsidian .cm-number {
+  color: var(--syntax-number);
+}
+
+.cm-s-obsidian .cm-keyword {
+  color: var(--syntax-keyword);
+  font-weight: bold;
 }
