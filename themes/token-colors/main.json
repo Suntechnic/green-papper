@@ -11,7 +11,7 @@
 		},
         {
 			"name": "String",
-			"scope": "string | punctuation.definition.string",
+			"scope": "string, punctuation.definition.string",
 			"settings": {
 				"foreground": "#cc33cc"
 			}

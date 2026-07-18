@@ -251,7 +251,7 @@
 		},
 		{
 			"name": "String",
-			"scope": "string | punctuation.definition.string",
+			"scope": "string, punctuation.definition.string",
 			"settings": {
 				"foreground": "#e10000"
 			}
@@ -266,14 +266,14 @@
 		},
 		{
 			"name": "Number",
-			"scope": "Number",
+			"scope": "constant.numeric",
 			"settings": {
 				"foreground": "#9f1bf1"
 			}
 		},
 		{
 			"name": "Build–in constant",
-			"scope": "",
+			"scope": "constant.language",
 			"settings": {
 				"foreground": "#9f1bf1"
 			}
@@ -338,7 +338,7 @@
 		},
 		{
 			"name": "String constant",
-			"scope": "String constant",
+			"scope": "string constant",
 			"settings": {
 				"foreground": "#696969ff"
 			}
@@ -381,20 +381,6 @@
 			"scope": "text source",
 			"settings": {
 				"foreground": "#080808ff"
-			}
-		},
-		{
-			"name": "Function name",
-			"scope": "function name",
-			"settings": {
-				"foreground": "#ae7a00ff"
-			}
-		},
-		{
-			"name": "Function argument",
-			"scope": "function argument",
-			"settings": {
-				"foreground": "#99a600ff"
 			}
 		},
 		{
@@ -607,7 +593,7 @@
 		},
 		{
 			"name": "Markup.heading",
-			"scope": "markup.heading | markup.heading entity.name",
+			"scope": "markup.heading, markup.heading entity.name",
 			"settings": {
 				"foreground": "#142b5aff"
 			}
@@ -621,7 +607,7 @@
 		},
 		{
 			"name": "Markup.italic",
-			"scope": "Markup.italic",
+			"scope": "markup.italic",
 			"settings": {
 				"foreground": "#080808ff"
 			}
