@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.4.2] - 2026-07-18
+
+- Мелкие исправления / Minor fixes
+
 ## [0.4.1] - 2025-10-19
 
 - Базовая цветовая схема и улучшение подсветки комментариев / Base color scheme and improved comment highlighting
