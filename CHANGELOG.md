@@ -1,5 +1,12 @@
 # Change Log
 
+## [Unreleased] - 2026-09-12
+
+- Исправлен синий цвет терминала, который ранее совпадал с фоном светлых тем / Fixed the terminal blue color, which previously matched the background in light themes (Author: GitHub Copilot)
+- Добавлены цвета для современных областей VS Code: sticky scroll, inlay hints, gutter, minimap, peek view, Git, notebooks, Chat, inline Chat, validation, dropdowns и checkboxes / Added colors for modern VS Code areas: sticky scroll, inlay hints, gutter, minimap, peek view, Git, notebooks, Chat, inline Chat, validation, dropdowns and checkboxes (Author: GitHub Copilot)
+- Значения новых цветов адаптированы под все шесть вариантов темы / Adapted the new colors for all six theme variants (Author: GitHub Copilot)
+- Добавлены палитры Guake / Added Guake palettes
+
 ## [0.4.2] - 2026-07-18
 
 - Мелкие исправления / Minor fixes
