@@ -1,6 +1,6 @@
 # Change Log
 
-## [Unreleased] - 2026-09-12
+## [0.5.0] - 2026-09-12
 
 - Добавлена тёмная тема Green Chrome Dark: base / Added the Green Chrome Dark: base theme (Author: GitHub Copilot)
 - Исправлен синий цвет терминала, который ранее совпадал с фоном светлых тем / Fixed the terminal blue color, which previously matched the background in light themes (Author: GitHub Copilot)
