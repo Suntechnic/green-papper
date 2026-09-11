@@ -34,6 +34,11 @@
         "path": "./themes/chrome-green-base.json"
       },
       {
+        "label": "Green Chrome Dark: base",
+        "uiTheme": "vs-dark",
+        "path": "./themes/chrome-green-base-dark.json"
+      },
+      {
         "label": "Vert Guignet Chrome",
         "uiTheme": "vs",
         "path": "./themes/chrome-vertguignet.json"

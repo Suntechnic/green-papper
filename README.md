@@ -1,25 +1,26 @@
 # Green Papper
 
-Набор светлых цветовых тем для Visual Studio Code с мягкой зелёной гаммой и единым стилем подсветки кода.
+Набор цветовых тем для Visual Studio Code с мягкой зелёной гаммой и единым стилем подсветки кода.
 
-A collection of light Visual Studio Code themes with a soft green palette and a consistent code-highlighting style.
+A collection of Visual Studio Code themes with a soft green palette and a consistent code-highlighting style.
 
 ## Темы / Themes
 
-В расширение входят шесть вариантов:
+В расширение входят семь вариантов:
 
-The extension includes six variants:
+The extension includes seven variants:
 
 - **Green paper** — основная зелёная тема / the main green theme
 - **Green Chrome** — зелёная тема в стиле Chrome / a Chrome-inspired green theme
 - **Green Chrome: base** — базовый вариант Green Chrome / the base Green Chrome variant
+- **Green Chrome Dark: base** — тёмный базовый вариант Green Chrome / the dark base Green Chrome variant
 - **Vert Guignet Chrome** — тёплая Chrome-палитра / a warm Chrome-inspired palette
 - **Green paper white** — светлый нейтральный вариант / a light neutral variant
 - **Green paper bitrix** — вариант для работы с Bitrix / a Bitrix-oriented variant
 
-Все варианты рассчитаны на светлый интерфейс VS Code.
+Большинство вариантов рассчитано на светлый интерфейс VS Code; **Green Chrome Dark: base** предназначена для тёмного интерфейса.
 
-All variants are designed for the light VS Code interface.
+Most variants are designed for the light VS Code interface; **Green Chrome Dark: base** is designed for the dark interface.
 
 ![classic](images/classic.png)
 ![bitrix](images/bitrix.png)
@@ -35,9 +36,9 @@ All variants are designed for the light VS Code interface.
 
 ![CODE](images/code.png)
 
-Тема остаётся светлой и не создаёт резкого контраста с большинством веб-сайтов.
+Светлые темы не создают резкого контраста с большинством веб-сайтов, а тёмный вариант снижает нагрузку на глаза при работе в тёмном интерфейсе.
 
-The themes stay light and avoid harsh contrast with most websites.
+The light themes avoid harsh contrast with most websites, while the dark variant reduces eye strain when working with a dark interface.
 
 ![HTML](images/html.png)
 
