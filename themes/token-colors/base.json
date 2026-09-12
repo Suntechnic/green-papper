@@ -110,7 +110,7 @@
 			"scope": "comment.line.number-sign",
 			"settings": {
 				"fontStyle": "italic bold",
-				"foreground": "#484848",
+				"foreground": "#9da298",
                 "background": "#FFFEBA"
 			}
 		},
@@ -119,7 +119,7 @@
 			"scope": "comment.block.documentation",
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#484848"
+				"foreground": "#9da298"
 			}
 		},
 		{

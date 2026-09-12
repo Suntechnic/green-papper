@@ -30,7 +30,7 @@
 		{
 			"scope": "entity.name.type, support.type, storage.type",
 			"settings": {
-				"foreground": "#9fe7ff"
+				"foreground": "#c57636"
 			}
 		},
 		{
@@ -42,7 +42,7 @@
 		{
 			"scope": "keyword, storage, keyword.control, keyword.operator",
 			"settings": {
-				"foreground": "#ffb1c7",
+				"foreground": "#d7945e",
 				"fontStyle": "bold"
 			}
 		},
