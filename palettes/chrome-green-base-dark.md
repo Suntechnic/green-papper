@@ -5,34 +5,34 @@
 Обычный текст: #e0e4da (colors.editor.foreground; tokenColors.scope:"meta.property-value.css, support.constant.property-value.css";tokenColors.scope:"text.html.markdown, meta.paragraph.markdown, markup.paragraph.markdown, punctuation.definition.list.markdown")
 
 ## HTML
-Тэги: #7cacf8
-< и >: #7cacf8
-Имена атрибутов: #a8c7fa
-Значения атрибутов: #fe8d59
-Кавычки и знак = в атрибутах: #7cacf8
-Ссылки в атрибутах href/src: #a0d490
-Обычный текст: #e0e4da
+Тэги: #7cacf8 (tokenColors.scope:"entity.name.tag.html")
+< и >: #7cacf8 (tokenColors.scope:"punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html")
+Имена атрибутов: #a8c7fa (tokenColors.scope:"entity.other.attribute-name.html")
+Значения атрибутов: #fe8d59 (tokenColors.scope:"string.quoted.double.html, string.quoted.single.html")
+Кавычки и знак = в атрибутах: #7cacf8 (tokenColors.scope:"punctuation.definition.string.begin.html, punctuation.definition.string.end.html, punctuation.separator.key-value.html")
+Ссылки в атрибутах href/src: #a0d490 (tokenColors.scope:"entity.other.attribute-name.html[href], entity.other.attribute-name.html[src]")
+Обычный текст: #e0e4da (colors.editor.foreground)
 
 ## CSS
-Имена свойств: #5dd5fb
-Значения свойств: #e0e4da
+Имена свойств: #5dd5fb (tokenColors.scope:"support.type.vendored.property-name.css, meta.property-name.css")
+Значения свойств: #e0e4da (tokenColors.scope:"meta.property-value.css, support.constant.property-value.css")
 
 ## Интерфес
-Бэкграунд редактора: #232720
-Цвет фона панелей: #313f2b
-Цвета текста панелей: #c4c8be и #a0d490
+Бэкграунд редактора: #232720 (colors.editor.background; colors.terminal.background)
+Цвет фона панелей: #313f2b (colors.sideBar.background; colors.titleBar.activeBackground; colors.activityBar.background; colors.statusBar.background; colors.statusBar.noFolderBackground; colors.panel.background; colors.editorWidget.background; colors.editorGroupHeader.tabsBackground)
+Цвета текста панелей: #c4c8be (colors.sideBar.foreground; colors.panelTitle.inactiveForeground; colors.statusBar.foreground) и #a0d490 (colors.sideBarTitle.foreground; colors.panelTitle.activeForeground)
 
 ## Дополнительные цвета которые нужно использовать в теме
 ```
-#ae8252
-#e4c382
-#b8c47f
-#87b2bd
+#ae8252 (tokenColors.scope:"constant, constant.numeric, constant.language, variable.language")
+#e4c382 (tokenColors.scope:"markup.heading, markup.heading entity.name, markup.heading.markdown, entity.name.section.markdown, punctuation.definition.heading.markdown")
+#b8c47f (tokenColors.scope:"markup.list, markup.quote, markup.italic, markup.bold, markup.underline, markup.link, markup.raw")
+#87b2bd (tokenColors.scope:"support.class, entity.name.type.class, entity.name.type.namespace, entity.name.class, entity.name.class.identifier.namespace.type")
 
-#ff5349
-#86b875
-#20261d
-#191d17
+#ff5349 (colors.editorBracketHighlight.foreground1)
+#86b875 (tokenColors.scope:"markup.quote")
+#20261d (colors.tab.inactiveBackground)
+#191d17 (colors.terminal.ansiBlack)
 ```
 
 # Остальные цвета
