@@ -1,5 +1,59 @@
 {
-    "include": "./base.json",
+	"include": "./base.json",
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		"comment": {
+			"foreground": "#989898",
+			"fontStyle": "italic"
+		},
+		"keyword": {
+			"foreground": "#762625",
+			"fontStyle": "bold"
+		},
+		"keyword.control": {
+			"foreground": "#A9312F",
+			"fontStyle": "bold"
+		},
+		"storage": {
+			"foreground": "#8f200f",
+			"fontStyle": "bold"
+		},
+		"typeModifier": {
+			"foreground": "#8f200f",
+			"fontStyle": "bold"
+		},
+		"operator": "#0f95b0",
+		"string": "#cc33cc",
+		"number": "#9f1bf1",
+		"boolean": "#9f1bf1",
+		"enumMember": "#9f1bf1",
+		"function": "#000000",
+		"method": "#000000",
+		"function.defaultLibrary": "#3c7a03",
+		"method.defaultLibrary": "#3c7a03",
+		"class": "#b18534",
+		"type": "#b18534",
+		"interface": "#b18534",
+		"enum": "#b18534",
+		"class.defaultLibrary": "#b18534",
+		"type.defaultLibrary": "#b18534",
+		"variable": {
+			"foreground": "#006600",
+			"fontStyle": "bold"
+		},
+		"variable.readonly": "#9f1bf1",
+		"variable.readonly.defaultLibrary": "#9f1bf1",
+		"variable.defaultLibrary": "#295502",
+		"parameter": "#ca7300",
+		"property": "#934b3c",
+		"property.readonly": "#934b3c",
+		"namespace": "#6c65b0",
+		"decorator": "#ca7300",
+		"variable.language": {
+			"foreground": "#1c36b7",
+			"fontStyle": "bold"
+		}
+	},
 	"tokenColors": [
 		{
 			"name": "Variables",
@@ -9,14 +63,13 @@
 				"foreground": "#006600"
 			}
 		},
-        {
+		{
 			"name": "String",
 			"scope": "string, punctuation.definition.string",
 			"settings": {
 				"foreground": "#cc33cc"
 			}
 		},
-
 		{
 			"name": "Strings, Inherited Class",
 			"scope": "string, entity.other.inherited-class",

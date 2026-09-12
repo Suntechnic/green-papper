@@ -1,72 +1,63 @@
 {
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		"comment": {
+			"foreground": "#989898",
+			"fontStyle": "italic"
+		},
+		"keyword": {
+			"foreground": "#762625",
+			"fontStyle": "bold"
+		},
+		"keyword.control": {
+			"foreground": "#A9312F",
+			"fontStyle": "bold"
+		},
+		"storage": {
+			"foreground": "#8f200f",
+			"fontStyle": "bold"
+		},
+		"typeModifier": {
+			"foreground": "#8f200f",
+			"fontStyle": "bold"
+		},
+		"operator": "#0f95b0",
+		"string": "#e10000",
+		"number": "#9f1bf1",
+		"boolean": "#9f1bf1",
+		"enumMember": "#9f1bf1",
+		"function": "#000000",
+		"method": "#000000",
+		"function.defaultLibrary": "#3c7a03",
+		"method.defaultLibrary": "#3c7a03",
+		"class": "#b18534",
+		"type": "#b18534",
+		"interface": "#b18534",
+		"enum": "#b18534",
+		"class.defaultLibrary": "#b18534",
+		"type.defaultLibrary": "#b18534",
+		"variable": {
+			"fontStyle": "bold"
+		},
+		"variable.readonly": "#9f1bf1",
+		"variable.readonly.defaultLibrary": "#9f1bf1",
+		"variable.defaultLibrary": "#295502",
+		"parameter": "#ca7300",
+		"property": "#934b3c",
+		"property.readonly": "#934b3c",
+		"namespace": "#6c65b0",
+		"decorator": "#ca7300",
+		"variable.language": {
+			"foreground": "#1c36b7",
+			"fontStyle": "bold"
+		}
+	},
 	"tokenColors": [
-		{
-			"settings": {
-				"foreground": "#3e4b53"
-			}
-		},
-		{
-			"name": "console.error",
-			"scope": "console.error",
-			"settings": {
-				"foreground": "#ca0000ff"
-			}
-		},
-		{
-			"name": "console.input",
-			"scope": "console.input",
-			"settings": {
-				"foreground": "#3BA776"
-			}
-		},
-		{
-			"name": "console.prompt",
-			"scope": "console.prompt",
-			"settings": {
-				"foreground": "#b651bcff",
-				"fontStyle": "bold"
-			}
-		},
-		{
-			"name": "console.warning",
-			"scope": "console.warning",
-			"settings": {
-				"foreground": "#cd6600ff"
-			}
-		},
-		{
-			"name": "console.debug",
-			"scope": "console.debug",
-			"settings": {
-				"foreground": "#5d6666ff"
-			}
-		},
 		{
 			"name": "hyperlink",
 			"scope": "hyperlink",
 			"settings": {
 				"foreground": "#0d1171ff"
-			}
-		},
-		{
-			"name": "Unstaged files",
-			"scope": "markup.deleted",
-			"settings": {
-				"foreground": "#ffffffff"
-			}
-		},
-		{
-			"name": "Staged files",
-			"scope": "markup.inserted",
-			"settings": {
-				"foreground": "#000000ff"
-			}
-		},
-		{
-			"name": "markup.changed",
-			"scope": "markup.changed",
-			"settings": {
-				"foreground": "#f8f8f8ff"
 			}
 		},
 		{
@@ -110,8 +101,7 @@
 			"scope": "comment.line.number-sign",
 			"settings": {
 				"fontStyle": "italic bold",
-				"foreground": "#9da298",
-                "background": "#FFFEBA"
+				"foreground": "#484848"
 			}
 		},
         {
@@ -128,13 +118,6 @@
 			"settings": {
 				"fontStyle": "bold",
 				"foreground": "#160c2a"
-			}
-		},
-		{
-			"name": "Constant numeric",
-			"scope": "constant.numeric",
-			"settings": {
-				"foreground": "#e10000"
 			}
 		},
 		{
@@ -223,14 +206,6 @@
 			"settings": {
 				"fontStyle": "bold",
 				"foreground": "#8f200f"
-			}
-		},
-		{
-			"name": "Storage JS TS",
-			"scope": "token.storage.js,token.storage.ts",
-			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#393135"
 			}
 		},
 		{
@@ -571,7 +546,7 @@
 		},
 		{
 			"name": "js dom variable",
-			"scope": "support.variable.dom.js,support.variable.property.dom.js,support.variable.dom.ts,support.variable.property.dom.ts,",
+			"scope": "support.variable.dom.js,support.variable.property.dom.js,support.variable.dom.ts,support.variable.property.dom.ts",
 			"settings": {
 				"foreground": "#499504"
 			}
@@ -647,21 +622,21 @@
 			"name": "Markup.deleted",
 			"scope": "markup.deleted",
 			"settings": {
-				"foreground": "#47565fff"
+				"foreground": "#b03a3a"
 			}
 		},
 		{
 			"name": "Markup.inserted",
 			"scope": "markup.inserted",
 			"settings": {
-				"foreground": "#cc0000ff"
+				"foreground": "#2e7d4f"
 			}
 		},
 		{
 			"name": "Markup.changed",
 			"scope": "markup.changed",
 			"settings": {
-				"foreground": "#ffffffff"
+				"foreground": "#9a6a00"
 			}
 		}
 	]

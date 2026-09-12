@@ -24,7 +24,7 @@
 Параметры функций и методов: #e4c382 (tokenColors.scope:"variable.parameter")
 Языковая переменная $this: #5ba3ff (tokenColors.scope:"variable.language")
 Функции и вызовы функций: #a0d490 (tokenColors.scope:"entity.name.function, support.function, meta.function-call")
-Классы и типы: #87b2bd / #c57636 (tokenColors.scope:"support.class, entity.name.type...")
+Классы и типы: #87b2bd / #c57636 / #71a562 (tokenColors.scope:"support.class, entity.name.type...")
 Переменные и свойства: #edf0d2 / #e0e4da (colors.editor.foreground; tokenColors.scope:"variable, variable.other.property")
 
 ## JavaScript / TypeScript

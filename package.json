@@ -3,19 +3,27 @@
   "displayName": "Green paper",
   "publisher": "Suntechnic",
   "icon": "images/logo.png",
-  "description": "",
+  "description": "Light, eye-friendly green color themes for VS Code with consistent multi-language highlighting",
   "version": "0.5.0",
   "license": "GPL-2.0",
+  "keywords": [
+    "theme",
+    "color theme",
+    "light theme",
+    "green",
+    "eye-friendly",
+    "accessible"
+  ],
   "engines": {
-    "vscode": "^1.90.0"
+    "vscode": "^1.96.0"
   },
   "categories": [
     "Themes"
   ],
   "repository": {
-		"type": "git",
-		"url": "https://github.com/Suntechnic/green-papper.git"
-	},
+    "type": "git",
+    "url": "https://github.com/Suntechnic/green-papper.git"
+  },
   "contributes": {
     "themes": [
       {
