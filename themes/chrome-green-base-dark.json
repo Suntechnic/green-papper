@@ -10,9 +10,15 @@
 			}
 		},
 		{
-			"scope": "constant, constant.numeric, constant.language, variable.language",
+			"scope": "constant, constant.other",
 			"settings": {
 				"foreground": "#ae8252"
+			}
+		},
+		{
+			"scope": "constant.numeric, constant.language",
+			"settings": {
+				"foreground": "#c394e8"
 			}
 		},
 		{
@@ -43,13 +49,26 @@
 		{
 			"scope": "string, punctuation.definition.string, markup.inline.raw",
 			"settings": {
-				"foreground": "#d9f7a6"
+				"foreground": "#f07171"
 			}
 		},
 		{
-			"scope": "variable, variable.parameter, variable.other.property",
+			"scope": "variable, variable.other.property",
 			"settings": {
 				"foreground": "#edf0d2"
+			}
+		},
+		{
+			"scope": "variable.parameter",
+			"settings": {
+				"foreground": "#e4c382"
+			}
+		},
+		{
+			"scope": "variable.language",
+			"settings": {
+				"foreground": "#5ba3ff",
+				"fontStyle": "bold"
 			}
 		},
 		{
@@ -61,7 +80,7 @@
 		{
 			"scope": "meta.embedded, source.php, text.html.php",
 			"settings": {
-				"foreground": "#eaf6ff"
+				"foreground": "#e0e4da"
 			}
 		},
 		{
@@ -104,6 +123,43 @@
 			"scope": "meta.property-value.css, support.constant.property-value.css",
 			"settings": {
 				"foreground": "#e0e4da"
+			}
+		},
+		{
+			"scope": "variable.other.readwrite.js, support.variable.property.js, support.variable.object.process.js, variable.other.readwrite.ts, support.variable.property.ts",
+			"settings": {
+				"foreground": "#8cc27e"
+			}
+		},
+		{
+			"scope": "meta.object-literal.key.js, meta.object-literal.key.ts",
+			"settings": {
+				"foreground": "#8cc27e"
+			}
+		},
+		{
+			"scope": "support.type.object.console.js, support.type.object.console.ts, support.variable.dom.js, support.variable.property.dom.js, support.variable.dom.ts, support.variable.property.dom.ts",
+			"settings": {
+				"foreground": "#8cc27e"
+			}
+		},
+		{
+			"scope": "punctuation.definition.template-expression.begin.js, punctuation.definition.template-expression.end.js, punctuation.definition.template-expression.begin.ts, punctuation.definition.template-expression.end.ts",
+			"settings": {
+				"foreground": "#8cc27e"
+			}
+		},
+		{
+			"scope": "keyword.operator.expression.instanceof.js, keyword.operator.expression.instanceof.ts, keyword.operator.expression.typeof.js, keyword.operator.expression.typeof.ts",
+			"settings": {
+				"foreground": "#8cc27e"
+			}
+		},
+		{
+			"scope": "var.this.js, var.this.ts, variable.language.this.js, variable.language.this.ts",
+			"settings": {
+				"foreground": "#5ba3ff",
+				"fontStyle": "bold"
 			}
 		},
 		{
