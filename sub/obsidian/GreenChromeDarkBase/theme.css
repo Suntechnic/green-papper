@@ -1,0 +1,280 @@
+.theme-dark,
+:root[saved-theme="GreenChromeDarkBase"] {
+  color-scheme: dark;
+
+  --background-primary: #232720;
+  --background-primary-alt: #2A3326;
+  --background-secondary: #313f2b;
+  --background-secondary-alt: #283224;
+  --background-tertiary: #20261d;
+
+  --background-modifier-border: #526653;
+  --background-modifier-border-hover: #55b88a;
+  --background-modifier-form-field: #1f2b23;
+  --background-modifier-form-field-highlighted: #41654d;
+  --background-modifier-box-shadow: #00000066;
+  --background-modifier-hover: #304a3a;
+  --background-modifier-active-hover: #365443;
+
+  --text-normal: #e0e4da;
+  --text-muted: #91a699;
+  --text-faint: #718579;
+  --text-on-accent: #f2fff5;
+  --text-selection: #45624b;
+  --text-highlight-bg: #a36b4066;
+
+  --interactive-normal: #3b9b68;
+  --interactive-hover: #4db47b;
+  --interactive-accent: #3b9b68;
+  --interactive-accent-hover: #4db47b;
+  --color-accent: #55b88a;
+  --color-accent-1: #55b88a;
+  --color-accent-2: #a0d490;
+
+  --tab-text-color: #91a699;
+  --tab-text-color-active: #e0e4da;
+  --tab-background-active: #232720;
+  --tab-background-inactive: #20261d;
+
+  --titlebar-text-color: #718579;
+  --titlebar-text-color-focused: #e0e4da;
+  --link-color: #55b88a;
+  --link-color-hover: #a0d490;
+
+  --background-modifier-success: #43b24422;
+  --background-modifier-error: #f5181822;
+  --background-modifier-error-rgb: 245, 24, 24;
+  --background-modifier-warning: #f2ae4922;
+  --background-modifier-warning-rgb: 242, 174, 73;
+
+  --code-normal: #e0e4da;
+  --code-background: #313f2b;
+  --code-comment: #718579;
+  --code-function: #a0d490;
+  --code-keyword: #d7945e;
+  --code-string: #f07171;
+  --code-variable: #edf0d2;
+  --code-operator: #d7945e;
+  --code-property: #edf0d2;
+  --code-value: #c394e8;
+  --code-tag: #7cacf8;
+  --code-punctuation: #d8e2d9;
+  --code-class-name: #f07171;
+
+  --h1-color: #e4c382;
+  --h2-color: #a0d490;
+  --h3-color: #87b2bd;
+  --h4-color: #7cacf8;
+  --h5-color: #91a699;
+  --h6-color: #718579;
+
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: #00000066;
+  --scrollbar-active-thumb-bg: #3b9b68;
+
+  --syntax-text-normal: #e0e4da;
+  --syntax-comment: #9da299;
+  --syntax-constant: #ae8252;
+  --syntax-number: #c394e8;
+  --syntax-string: #f07171;
+  --syntax-regexp: #f07171;
+  --syntax-variable: #edf0d2;
+  --syntax-variable-parameter: #e4c382;
+  --syntax-keyword: #d7945e;
+  --syntax-operator: #d7945e;
+  --syntax-html-tag: #7cacf8;
+  --syntax-html-attribute: #a8c7fa;
+  --syntax-entity-type: #71a562;
+  --syntax-entity-class: #87b2bd;
+}
+
+body.theme-dark {
+  color-scheme: dark;
+}
+
+.markdown-preview-view ul > li::marker,
+.markdown-preview-view ol > li::marker {
+  color: #b8c47f;
+}
+
+.markdown-preview-view code {
+  color: var(--code-string);
+  background-color: var(--code-background);
+}
+
+.workspace,
+.workspace-leaf,
+.markdown-source-view.mod-cm6,
+.markdown-preview-view {
+  background: var(--background-primary);
+}
+
+.workspace-ribbon,
+.mod-left-split,
+.mod-right-split,
+.side-dock-settings {
+  background: var(--background-secondary);
+}
+
+.nav-file-title,
+.nav-folder-title,
+.workspace-tab-header-inner-title {
+  color: var(--text-normal);
+}
+
+.workspace-tab-header.is-active {
+  background: var(--tab-background-active);
+}
+
+.workspace-tab-header:not(.is-active) {
+  background: var(--tab-background-inactive);
+}
+
+.status-bar {
+  background: var(--background-secondary);
+  color: var(--text-muted);
+}
+
+.cm-selectionBackground,
+::selection {
+  background: var(--text-selection);
+}
+
+
+/* Base editor text */
+.cm-s-obsidian,
+.cm-editor {
+  color: var(--syntax-text-normal);
+}
+
+/* Comments */
+.cm-s-obsidian .cm-comment,
+.cm-editor .cm-comment {
+  color: var(--syntax-comment);
+  font-style: italic;
+}
+
+/* Numbers and constants */
+.cm-s-obsidian .cm-number,
+.cm-editor .cm-number {
+  color: var(--syntax-number);
+}
+.cm-s-obsidian .cm-atom,
+.cm-editor .cm-atom {
+  color: var(--syntax-constant);
+}
+
+/* Strings and regexp */
+.cm-s-obsidian .cm-string,
+.cm-editor .cm-string {
+  color: var(--syntax-string);
+}
+.cm-s-obsidian .cm-string.cm-special,
+.cm-editor .cm-string.cm-special {
+  color: var(--syntax-regexp);
+}
+
+/* Variables and parameters */
+.cm-s-obsidian .cm-variable,
+.cm-editor .cm-variable {
+  color: var(--syntax-variable);
+  font-weight: 600;
+}
+.cm-s-obsidian .cm-variable-2,
+.cm-editor .cm-variable-2 {
+  color: var(--syntax-variable-parameter);
+}
+
+/* Keywords */
+.cm-s-obsidian .cm-keyword,
+.cm-editor .cm-keyword {
+  color: var(--syntax-keyword);
+  font-weight: 600;
+}
+
+/* Operators */
+.cm-s-obsidian .cm-operator,
+.cm-editor .cm-operator {
+  color: var(--syntax-operator);
+}
+
+/* Tags and attributes (HTML JSX) */
+.cm-s-obsidian .cm-tag,
+.cm-editor .cm-tag {
+  color: var(--syntax-html-tag);
+}
+.cm-s-obsidian .cm-attribute,
+.cm-editor .cm-attribute {
+  color: var(--syntax-html-attribute);
+}
+
+/* Class, type and function names */
+.cm-s-obsidian .cm-typeName,
+.cm-editor .cm-typeName {
+  color: var(--syntax-entity-type);
+}
+.cm-s-obsidian .cm-property,
+.cm-editor .cm-property {
+  color: #edf0d2;
+}
+.cm-s-obsidian .cm-def,
+.cm-editor .cm-def {
+  color: var(--syntax-entity-class);
+}
+
+/* Selection and search highlight */
+.cm-selectionBackground,
+.cm-content ::selection {
+  background-color: var(--text-selection);
+}
+
+/* Markdown structure */
+.markdown-source-view.mod-cm6 .cm-header,
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3 {
+  color: var(--h1-color);
+}
+
+.markdown-source-view.mod-cm6 .cm-quote,
+.markdown-preview-view blockquote {
+  color: #86b875;
+  border-left: 3px solid #86b875;
+  padding-left: 0.8em;
+}
+
+/* Markdown links */
+.markdown-preview-view a,
+.cm-s-obsidian .cm-link {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+/* Lists */
+.markdown-preview-view li {
+  color: #b8c47f;
+}
+
+/* Bold and italic */
+.markdown-preview-view strong {
+  color: #b8c47f;
+  font-weight: 700;
+}
+.markdown-preview-view em {
+  color: #b8c47f;
+  font-style: italic;
+}
+
+/* Inline code and code blocks */
+.markdown-preview-view code {
+  color: #b8c47f;
+}
+
+/* Deleted and inserted text */
+.markdown-preview-view .cm-strikethrough,
+.markdown-preview-view del {
+  color: #ff5449;
+}
+.markdown-preview-view ins {
+  color: #a0d490;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "GreenChromeBase",
+  "version": "1.2.0",
+  "minAppVersion": "1.9.0",
+  "author": "@Suntechnic",
+  "authorUrl": "https://github.com/Suntechnic",
+  "isDesktopOnly": false
+}

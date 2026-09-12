@@ -1,5 +1,13 @@
 # Change Log
 
+## [Guake] - 2026-09-13
+
+- Палитры Guake приведены к актуальным цветам тем: исправлены `ansiBlue` (`#28658F`), `ansiBrightWhite` и фон темы White (`#FFFFFF`); добавлены тёмные палитры `Green Papper Chrome Green Dark Base` и `Green Papper Vert Guignet Dark` / Guake palettes aligned with the current theme colors: fixed `ansiBlue` (`#28658F`), `ansiBrightWhite` and the White theme background (`#FFFFFF`); added the dark palettes `Green Papper Chrome Green Dark Base` and `Green Papper Vert Guignet Dark`
+
+## [Obsidian] - 2026-09-13
+
+- Добавлены темы Obsidian для всех остальных тем VS Code: GreenChromeBase, GreenChromeDarkBase, VertGuignetChrome, VertGuignetChromeDark, GreenPapperWhite, GreenPapperBitrix / Added Obsidian themes for all remaining VS Code themes: GreenChromeBase, GreenChromeDarkBase, VertGuignetChrome, VertGuignetChromeDark, GreenPapperWhite, GreenPapperBitrix
+
 ## [0.5.0] - 2026-09-12
 
 - Добавлена тёмная тема Green Chrome Dark: base / Added the Green Chrome Dark: base theme (Author: GitHub Copilot)

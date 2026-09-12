@@ -42,6 +42,21 @@ The light themes avoid harsh contrast with most websites, while the dark variant
 
 ![HTML](images/html.png)
 
+## Obsidian / Obsidian
+
+Одноимённые темы для Obsidian лежат в каталоге `sub/obsidian/`. Скопируйте нужные папки в `<vault>/.obsidian/themes/` и выберите тему в настройках внешнего вида.
+
+The matching Obsidian themes live in `sub/obsidian/`. Copy the folders you need to `<vault>/.obsidian/themes/` and pick the theme in the Appearance settings.
+
+- **GreenPapper** — для темы Green paper / for the Green paper theme
+- **GreenChrome** — для темы Green Chrome / for the Green Chrome theme
+- **GreenChromeBase** — для темы Green Chrome: base / for the Green Chrome: base theme
+- **GreenChromeDarkBase** — для темы Green Chrome Dark: base / for the Green Chrome Dark: base theme
+- **VertGuignetChrome** — для темы Vert Guignet Chrome / for the Vert Guignet Chrome theme
+- **VertGuignetChromeDark** — для темы Vert Guignet Chrome Dark / for the Vert Guignet Chrome Dark theme
+- **GreenPapperWhite** — для темы Green paper white / for the Green paper white theme
+- **GreenPapperBitrix** — для темы Green paper bitrix / for the Green paper bitrix theme
+
 ## Установка / Installation
 
 Установите расширение Green Papper в VS Code, затем откройте палитру команд (`Ctrl+Shift+P`) и выберите `Preferences: Color Theme`.
