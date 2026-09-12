@@ -1,5 +1,5 @@
 .theme-light,
-:root[saved-theme="GreenPapper"] {
+:root[saved-theme="GreenPaper"] {
   color-scheme: light;
 
     --background-primary: #F6F8F4;
@@ -72,7 +72,7 @@
   --scrollbar-thumb-bg: #aaaaaa99;
   --scrollbar-active-thumb-bg: #98a099;
 
-  --syntax-text-normal: #3e4b53;
+  --syntax-text-normal: #222222;
   --syntax-comment: #989898;
   --syntax-constant: #160c2a;
   --syntax-number: #9f1bf1;
@@ -273,8 +273,8 @@ body.theme-light {
 /* Удалённое / добавленное (diff) */
 .markdown-preview-view .cm-strikethrough,
 .markdown-preview-view del {
-  color: #47565f;
+  color: #b03a3a;
 }
 .markdown-preview-view ins {
-  color: #cc0000;
+  color: #2e7d4f;
 }
