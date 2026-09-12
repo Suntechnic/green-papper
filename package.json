@@ -44,6 +44,11 @@
         "path": "./themes/chrome-vertguignet.json"
       },
       {
+        "label": "Vert Guignet Chrome Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/chrome-vertguignet-dark.json"
+      },
+      {
         "label": "Green paper white",
         "uiTheme": "vs",
         "path": "./themes/white.json"

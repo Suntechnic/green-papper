@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Панель проекта</title>
+	<link rel="stylesheet" href="/assets/dashboard.css">
+    <script src="/assets/dashboard.js" defer></script>
+</head>
+<body>
+	<header class="site-header">
+		<a class="brand" href="/" aria-label="На главную">Green Paper</a>
+		<nav class="main-nav" aria-label="Основная навигация">
+			<a href="/overview" aria-current="page">Обзор</a>
+			<a href="/reports">Отчёты</a>
+			<a href="/settings">Настройки</a>
+		</nav>
+		<button class="profile-button" type="button" aria-expanded="false">
+			<img src="/images/avatar.png" alt="" width="32" height="32">
+			<span>Анна Смирнова</span>
+		</button>
+	</header>
+	<main class="dashboard" id="main-content">
+		<section class="hero" aria-labelledby="page-title">
+			<p class="eyebrow">Рабочая область · 12 сентября 2026</p>
+			<h1 id="page-title">Добрый день, Анна</h1><p>Здесь собраны последние изменения в проекте и задачи команды.</p>
+		</section>
+		<section class="stats-grid" aria-label="Ключевые показатели">
+			<article class="stat-card" data-status="positive">
+				<h2>Активные задачи</h2>
+				<strong>24</strong>
+				<span>+8% за неделю</span>
+			</article>
+			<article class="stat-card" data-status="neutral">
+				<h2>Готовность релиза</h2>
+				<strong>87%</strong>
+				<progress value="87" max="100">87%</progress>
+			</article>
+		</section>
+		<section class="activity" aria-labelledby="activity-title">
+			<div class="section-heading">
+				<h2 id="activity-title">Последняя активность</h2>
+				<button type="button" class="icon-button" title="Обновить список">↻</button>
+			</div>
+			<ul class="activity-list">
+				<li><time datetime="2026-09-12T09:40">09:40</time> Илья обновил макеты</li>
+				<li><time datetime="2026-09-12T08:15">08:15</time> Мария добавила комментарий</li>
+			</ul>
+		</section>
+	</main>
+</body>
+</html>

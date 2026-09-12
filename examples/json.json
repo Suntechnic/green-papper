@@ -1,0 +1,50 @@
+{
+	"workspace": {
+		"id": "green-paper",
+		"name": "Green Paper",
+		"visibility": "private", "createdAt": "2026-08-21T10:30:00Z",
+		"owner": {
+			"id": 42,
+			"name": "Анна Смирнова",
+			"email": "anna.smirnova@example.com",
+			"roles": ["owner", "editor"]
+		},
+		"repository": {
+			"provider": "github",
+			"organization": "green-lab",
+			"name": "paper-dashboard",
+			"defaultBranch": "main",
+			"protectedBranches": ["main", "release"]
+		}
+	},
+	"preferences": {
+		"locale": "ru-RU",
+		"timezone": "Europe/Moscow", "theme": "green-papper",
+		"notifications": {
+			"email": true,
+			"desktop": false,
+			"digest": "weekly"
+		}
+	},
+	"milestones": [
+		{
+			"title": "Бета-релиз",
+			"dueDate": "2026-09-20",
+			"progress": 0.74,
+			"labels": ["release", "important"],
+			"assignees": [42, 17]
+		},
+		{
+			"title": "Публичная документация",
+			"dueDate": null,
+			"progress": 0.35,
+			"labels": ["docs"],
+			"assignees": [17]
+		}
+	],
+	"featureFlags": {
+		"newNavigation": true,
+		"activityStream": true,
+		"experimentalCharts": false
+	}
+}
