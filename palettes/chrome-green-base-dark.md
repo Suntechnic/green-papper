@@ -1,8 +1,8 @@
 # Обязательные цвета
 
 ## Все языки:
-Комментарии: #9da299
-Обычный текст: #e0e4da
+Комментарии: #9da299 (tokenColors.scope:"comment, punctuation.definition.comment")
+Обычный текст: #e0e4da (colors.editor.foreground; tokenColors.scope:"meta.property-value.css, support.constant.property-value.css";tokenColors.scope:"text.html.markdown, meta.paragraph.markdown, markup.paragraph.markdown, punctuation.definition.list.markdown")
 
 ## HTML
 Тэги: #7cacf8
