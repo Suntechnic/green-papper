@@ -17,6 +17,25 @@
 Имена свойств: #5dd5fb (tokenColors.scope:"support.type.vendored.property-name.css, meta.property-name.css")
 Значения свойств: #e0e4da (tokenColors.scope:"meta.property-value.css, support.constant.property-value.css")
 
+## PHP
+Строки: #f07171 (tokenColors.scope:"string, punctuation.definition.string")
+Ключевые слова и конструкторы: #ffb1c7 (tokenColors.scope:"keyword, storage, keyword.control, keyword.operator")
+Числа и языковые константы (true, false, null): #c394e8 (tokenColors.scope:"constant.numeric, constant.language")
+Параметры функций и методов: #e4c382 (tokenColors.scope:"variable.parameter")
+Языковая переменная $this: #5ba3ff (tokenColors.scope:"variable.language")
+Функции и вызовы функций: #a0d490 (tokenColors.scope:"entity.name.function, support.function, meta.function-call")
+Классы и типы: #87b2bd / #9fe7ff (tokenColors.scope:"support.class, entity.name.type...")
+Переменные и свойства: #edf0d2 / #e0e4da (colors.editor.foreground; tokenColors.scope:"variable, variable.other.property")
+
+## JavaScript / TypeScript
+Строки: #f07171 (tokenColors.scope:"string, punctuation.definition.string")
+Переменные, свойства и ключи объектов: #8cc27e (tokenColors.scope:"variable.other.readwrite.js, meta.object-literal.key.js, support.variable.property.js")
+Объекты console, dom и шаблоны: #8cc27e (tokenColors.scope:"support.type.object.console.js, support.variable.dom.js, punctuation.definition.template-expression...")
+Ключевые слова: #ffb1c7 (tokenColors.scope:"keyword, storage, keyword.control, keyword.operator")
+Числа, booleans, null: #c394e8 (tokenColors.scope:"constant.numeric, constant.language")
+Переменная this: #5ba3ff (tokenColors.scope:"var.this.js, variable.language.this.js")
+Функции и методы: #a0d490 (tokenColors.scope:"entity.name.function, support.function, meta.function-call")
+
 ## Интерфес
 Бэкграунд редактора: #232720 (colors.editor.background; colors.terminal.background)
 Цвет фона панелей: #313f2b (colors.sideBar.background; colors.titleBar.activeBackground; colors.activityBar.background; colors.statusBar.background; colors.statusBar.noFolderBackground; colors.panel.background; colors.editorWidget.background; colors.editorGroupHeader.tabsBackground)
