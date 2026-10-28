@@ -4,6 +4,11 @@
 
 - Палитры Guake приведены к актуальным цветам тем: исправлены `ansiBlue` (`#28658F`), `ansiBrightWhite` и фон темы White (`#FFFFFF`); добавлены тёмные палитры `Green Papper Chrome Green Dark Base` и `Green Papper Vert Guignet Dark` / Guake palettes aligned with the current theme colors: fixed `ansiBlue` (`#28658F`), `ansiBrightWhite` and the White theme background (`#FFFFFF`); added the dark palettes `Green Papper Chrome Green Dark Base` and `Green Papper Vert Guignet Dark`
 - Добавлены темы Obsidian для всех остальных тем VS Code: GreenChromeBase, GreenChromeDarkBase, VertGuignetChrome, VertGuignetChromeDark, GreenPapperWhite, GreenPapperBitrix / Added Obsidian themes for all remaining VS Code themes: GreenChromeBase, GreenChromeDarkBase, VertGuignetChrome, VertGuignetChromeDark, GreenPapperWhite, GreenPapperBitrix
+- Добавлена тема Obsidian GreenChromeDark для тёмной темы Green Chrome Dark / Added the Obsidian GreenChromeDark theme for the dark Green Chrome Dark variant
+- Цвет строк в Obsidian-темах на основной палитре (`GreenPaper`, `GreenChrome`, `VertGuignetChrome`, `GreenPapperWhite`, `GreenPapperBitrix`) приведён к текущим темам VS Code: `--syntax-string` = `#cc33cc` / Aligned the string color in the main-palette Obsidian themes (`GreenPaper`, `GreenChrome`, `VertGuignetChrome`, `GreenPapperWhite`, `GreenPapperBitrix`) with the current VS Code themes: `--syntax-string` = `#cc33cc`
+- В палитры Guake добавлена тема `Green Papper Chrome Green Dark` / Added the `Green Papper Chrome Green Dark` Guake palette
+- Добавлен скрипт `sub/guake/patch-palettes.sh`: он переносит палитры из `palettes.md` в `palettes.py` Guake — заменяет совпадающие записи, удаляет устаревшие дубликаты и добавляет отсутствующие палитры, делая резервную копию перед записью / Added `sub/guake/patch-palettes.sh`: it copies the palettes from `palettes.md` into the Guake `palettes.py` — replaces matching entries, removes stale duplicates and adds missing palettes, making a backup before writing
+- Исправлена рекурсивная ссылка `include` в `themes/token-colors/main-dark.json` и внутреннее имя темы `Green Chrome Dark` / Fixed the recursive `include` in `themes/token-colors/main-dark.json` and the internal name of the `Green Chrome Dark` theme
 
 ## [0.5.0] - 2026-09-12
 

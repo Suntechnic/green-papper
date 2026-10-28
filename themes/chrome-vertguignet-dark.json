@@ -1,6 +1,6 @@
 {
   "name": "Vert Guignet Chrome Dark",
-  "include": "./token-colors/chrome-dark.json",
+  "include": "./token-colors/base-dark.json",
   "colors": {
     "focusBorder": "#a0d490",
     "widget.shadow": "#00000066",

@@ -7,6 +7,7 @@ final class ProjectSummary
 	 * @param array<int, array<string, mixed>> $lstTasks
 	 */
 	public function __construct(
+        #TODO: Consider adding validation for the project name and task list.
 		private readonly string $Name,
 		private readonly array $lstTasks,
 	) {

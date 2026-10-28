@@ -1,6 +1,6 @@
 {
 	"name": "Green Chrome Dark: base",
-	"include": "./token-colors/chrome-dark.json",
+	"include": "./token-colors/base-dark.json",
 	"colors": {
 		"focusBorder": "#55b88a",
 		"widget.shadow": "#00000066",

@@ -6,21 +6,23 @@ A collection of Visual Studio Code themes with a soft green palette and a consis
 
 ## Темы / Themes
 
-В расширение входят семь вариантов:
+В расширение входят девять вариантов:
 
-The extension includes seven variants:
+The extension includes nine variants:
 
 - **Green paper** — основная зелёная тема / the main green theme
 - **Green Chrome** — зелёная тема в стиле Chrome / a Chrome-inspired green theme
 - **Green Chrome: base** — базовый вариант Green Chrome / the base Green Chrome variant
+- **Green Chrome Dark** — тёмный вариант Green Chrome / the dark Green Chrome variant
 - **Green Chrome Dark: base** — тёмный базовый вариант Green Chrome / the dark base Green Chrome variant
 - **Vert Guignet Chrome** — тёплая Chrome-палитра / a warm Chrome-inspired palette
+- **Vert Guignet Chrome Dark** — тёмный вариант Vert Guignet Chrome / the dark Vert Guignet Chrome variant
 - **Green paper white** — светлый нейтральный вариант / a light neutral variant
 - **Green paper bitrix** — вариант для работы с Bitrix / a Bitrix-oriented variant
 
-Большинство вариантов рассчитано на светлый интерфейс VS Code; **Green Chrome Dark: base** предназначена для тёмного интерфейса.
+Большинство вариантов рассчитано на светлый интерфейс VS Code; для тёмного интерфейса предназначены **Green Chrome Dark**, **Green Chrome Dark: base** и **Vert Guignet Chrome Dark**.
 
-Most variants are designed for the light VS Code interface; **Green Chrome Dark: base** is designed for the dark interface.
+Most variants are designed for the light VS Code interface; **Green Chrome Dark**, **Green Chrome Dark: base** and **Vert Guignet Chrome Dark** are designed for the dark interface.
 
 ![classic](images/classic.png)
 ![bitrix](images/bitrix.png)
@@ -51,11 +53,27 @@ The matching Obsidian themes live in `sub/obsidian/`. Copy the folders you need 
 - **GreenPapper** — для темы Green paper / for the Green paper theme
 - **GreenChrome** — для темы Green Chrome / for the Green Chrome theme
 - **GreenChromeBase** — для темы Green Chrome: base / for the Green Chrome: base theme
+- **GreenChromeDark** — для темы Green Chrome Dark / for the Green Chrome Dark theme
 - **GreenChromeDarkBase** — для темы Green Chrome Dark: base / for the Green Chrome Dark: base theme
 - **VertGuignetChrome** — для темы Vert Guignet Chrome / for the Vert Guignet Chrome theme
 - **VertGuignetChromeDark** — для темы Vert Guignet Chrome Dark / for the Vert Guignet Chrome Dark theme
 - **GreenPapperWhite** — для темы Green paper white / for the Green paper white theme
 - **GreenPapperBitrix** — для темы Green paper bitrix / for the Green paper bitrix theme
+
+## Guake / Guake
+
+Палитры для терминала Guake лежат в `sub/guake/palettes.md`, а скрипт `sub/guake/patch-palettes.sh` переносит их в файл палитр Guake:
+
+The Guake terminal palettes live in `sub/guake/palettes.md`, and `sub/guake/patch-palettes.sh` copies them into the Guake palette file:
+
+```bash
+sudo ./sub/guake/patch-palettes.sh        # патч /usr/lib/python3/dist-packages/guake/palettes.py
+sudo ./sub/guake/patch-palettes.sh -n     # только diff, без записи
+```
+
+Скрипт заменяет записи с теми же именами, удаляет устаревшие дубликаты и добавляет отсутствующие палитры. После установки перезапустите Guake: палитры появятся в Preferences → Appearance → Palette.
+
+The script replaces entries with the same names, removes stale duplicates and adds missing palettes. Restart Guake afterwards: the palettes appear in Preferences → Appearance → Palette.
 
 ## Установка / Installation
 
