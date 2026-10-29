@@ -75,6 +75,25 @@ sudo ./sub/guake/patch-palettes.sh -n     # только diff, без запис
 
 The script replaces entries with the same names, removes stale duplicates and adds missing palettes. Restart Guake afterwards: the palettes appear in Preferences → Appearance → Palette.
 
+## Micro / Micro
+
+Цветовые схемы для редактора [micro](https://micro-editor.github.io/) лежат в `sub/micro/` и сгенерированы из тем VS Code в `themes/*.json`. Для каждой из девяти тем есть файл `.micro` с тем же названием, что и у темы VS Code (например, `green-papper.micro`, `green-chrome-dark.micro`).
+
+The micro colorschemes live in `sub/micro/` and are generated from the VS Code themes in `themes/*.json`. Each of the nine themes has a `.micro` file named after it (for example `green-papper.micro`, `green-chrome-dark.micro`).
+
+```bash
+mkdir -p ~/.config/micro/colorschemes
+cp sub/micro/*.micro ~/.config/micro/colorschemes/
+```
+
+Выберите схему в `~/.config/micro/settings.json`, например `"colorscheme": "green-papper"`, или через команду `set colorscheme green-papper` внутри micro.
+
+Select a scheme in `~/.config/micro/settings.json`, for example `"colorscheme": "green-papper"`, or run `set colorscheme green-papper` inside micro.
+
+После изменения тем в `themes/` пересоздайте схемы: `python3 sub/micro/generate-colorschemes.py`.
+
+After changing the themes in `themes/`, regenerate the schemes with `python3 sub/micro/generate-colorschemes.py`.
+
 ## Установка / Installation
 
 Установите расширение Green Papper в VS Code, затем откройте палитру команд (`Ctrl+Shift+P`) и выберите `Preferences: Color Theme`.
