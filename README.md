@@ -94,6 +94,64 @@ Select a scheme in `~/.config/micro/settings.json`, for example `"colorscheme": 
 
 After changing the themes in `themes/`, regenerate the schemes with `python3 sub/micro/generate-colorschemes.py`.
 
+## OpenCode / OpenCode
+
+Светлая тема OpenCode на базе **Green Chrome** лежит в `sub/opencode/green-chrome.json`. Скопируйте файл в каталог пользовательских тем:
+
+The light OpenCode theme based on **Green Chrome** lives in `sub/opencode/green-chrome.json`. Copy it to the global themes directory:
+
+```bash
+mkdir -p ~/.config/opencode/themes
+cp sub/opencode/green-chrome.json ~/.config/opencode/themes/green-chrome.json
+```
+
+Затем выберите `green-chrome` в настройках темы OpenCode или задайте её в `~/.config/opencode/cli.json`:
+
+Then select `green-chrome` in the OpenCode theme settings or set it in `~/.config/opencode/cli.json`:
+
+```json
+{
+  "theme": {
+    "name": "green-chrome",
+    "mode": "light"
+  }
+}
+```
+
+## OpenCode GUI / OpenCode GUI
+
+Для настольного приложения OpenCode используется отдельный формат Desktop Theme. Файл темы находится в `sub/opencode/green-chrome-desktop.json` и содержит светлый и тёмный варианты.
+
+Текущая версия GUI загружает пользовательские темы через GUI-плагин, а не просто читает файлы из `~/.config/opencode/themes/`. Схема должна соответствовать `https://opencode.ai/desktop-theme.json`; тему можно зарегистрировать плагином через `ctx.add(Theme, theme)` и выбрать в Settings → Appearance → Theme.
+
+The desktop app uses a separate Desktop Theme format. The theme is in `sub/opencode/green-chrome-desktop.json` with both light and dark variants.
+
+The current GUI loads custom themes through a GUI plugin rather than directly from `~/.config/opencode/themes/`. The file must follow `https://opencode.ai/desktop-theme.json`; a plugin registers it with `ctx.add(Theme, theme)` and makes it available under Settings → Appearance → Theme.
+
+Готовый пример регистрации находится в `sub/opencode/green-chrome-plugin/`. Соберите и подключите его локально:
+
+A registration example is provided in `sub/opencode/green-chrome-plugin/`. Build and connect it as a local plugin:
+
+```bash
+cd sub/opencode/green-chrome-plugin
+npm install
+npm run build
+```
+
+Добавьте абсолютный путь к каталогу плагина в `~/.config/opencode/opencode.jsonc`:
+
+Add the plugin directory's absolute path to `~/.config/opencode/opencode.jsonc`:
+
+```jsonc
+{
+  "plugins": [
+    "/absolute/path/to/green-papper/sub/opencode/green-chrome-plugin"
+  ]
+}
+```
+
+Перезапустите OpenCode Desktop. Тема появится в `Settings → Appearance → Theme` под названием **Green Chrome**.
+
 ## Установка / Installation
 
 Установите расширение Green Papper в VS Code, затем откройте палитру команд (`Ctrl+Shift+P`) и выберите `Preferences: Color Theme`.
